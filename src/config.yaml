@@ -1,0 +1,25 @@
+producer_conf:
+  bootstrap.servers: 'localhost:9092'
+
+producer_logger_path: '/confluence/logs/producer.log'
+
+consumer_conf:
+  bootstrap.servers: 'localhost:9092'
+  group.id: 'my_group'
+  auto.offset.reset: 'earliest'
+  
+consumer_logger_path: '/confluence/logs/consumer.log'
+
+api_url: 'https://api.coincap.io/v2/assets/'
+topic_name: 'cryptodata'
+
+cryptos_to_track: 
+  - 'bitcoin'
+  - 'ethereum'
+  - 'ripple'
+  - 'litecoin'
+  - 'dogecoin'
+  - 'cardano'
+  - 'polkadot'
+  - 'stellar'
+  - 'tron'
